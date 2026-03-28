@@ -33,6 +33,11 @@
     if (blobs[2])
       blobs[2].style.transform = "translate(" + x3 + "px, " + y3 + "px)";
 
+    var x4 = 20 * mx;
+    var y4 = -24 * my;
+    if (blobs[3])
+      blobs[3].style.transform = "translate(" + x4 + "px, " + y4 + "px)";
+
     if (Math.abs(tx - mx) > 0.0005 || Math.abs(ty - my) > 0.0005) {
       raf = requestAnimationFrame(tick);
     }
@@ -93,12 +98,4 @@
 
   requestAnimationFrame(revealBandIfNeeded);
   window.addEventListener("load", revealBandIfNeeded);
-
-  var mq = window.matchMedia("(prefers-reduced-motion: reduce)");
-  var scrollHint = document.getElementById("scroll-hint");
-  function syncReduced() {
-    if (scrollHint) scrollHint.hidden = mq.matches;
-  }
-  syncReduced();
-  mq.addEventListener("change", syncReduced);
 })();
