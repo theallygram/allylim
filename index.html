@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Allyson Lim — personal site" />
+    <title>Allyson Lim</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="aurora" id="aurora" aria-hidden="true">
+        <div class="aurora-blob aurora-blob--a" data-blob="0"></div>
+        <div class="aurora-blob aurora-blob--b" data-blob="1"></div>
+        <div class="aurora-blob aurora-blob--c" data-blob="2"></div>
+        <div class="aurora-grain"></div>
+      </div>
+
+      <header class="top">
+        <span class="top-mark">AL</span>
+      </header>
+
+      <main class="main">
+        <section class="hero">
+          <h1 class="hero-name">
+            <span class="hero-name-line">Allyson</span>
+            <span class="hero-name-line hero-name-line--accent">Lim</span>
+          </h1>
+
+          <p class="hero-role">Writing · Waterloo</p>
+
+          <div class="hero-actions">
+            <a
+              class="pill js-magnetic"
+              href="allyson-lim-resume.pdf"
+              target="_blank"
+              rel="noopener"
+            >
+              <span>Résumé</span>
+              <span class="pill-arrow" aria-hidden="true">↗</span>
+            </a>
+            <a
+              class="pill js-magnetic"
+              href="https://uwspace.uwaterloo.ca/items/6673c4e3-0561-48d4-b88e-64e8563caae2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>Graduate work</span>
+              <span class="pill-arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+
+          <div class="scroll-hint" id="scroll-hint" aria-hidden="true">
+            <span class="scroll-hint-arrow">↓</span>
+          </div>
+        </section>
+
+        <section class="band" id="band">
+          <div class="band-inner">
+            <p class="band-kicker">At a glance</p>
+            <ul class="chips" aria-label="Focus areas">
+              <li><span class="chip">Clear writing</span></li>
+              <li><span class="chip">Research</span></li>
+              <li><span class="chip">Communication</span></li>
+            </ul>
+          </div>
+        </section>
+
+        <footer class="foot">
+          <p>© <span id="year"></span> Allyson Lim</p>
+        </footer>
+      </main>
+    </div>
+    <script src="main.js" defer></script>
+  </body>
+</html>
