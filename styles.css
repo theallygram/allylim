@@ -47,6 +47,22 @@ a:focus-visible {
   background: rgba(30, 43, 184, 0.15);
 }
 
+/* —— Scroll reveal —— */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.reveal-left {
+  transform: translateX(-20px);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
 /* —— Nav —— */
 .nav {
   position: fixed;
@@ -84,9 +100,12 @@ a:focus-visible {
   color: var(--muted);
 }
 
+.nav-links a {
+  transition: color 0.15s;
+}
+
 .nav-links a:hover {
   color: var(--fg);
-  transition: color 0.15s;
 }
 
 /* —— Main —— */
@@ -113,8 +132,8 @@ a:focus-visible {
 .hero-title {
   margin: 0 0 24px;
   font-family: var(--font-display);
-  font-size: clamp(48px, 8vw, 72px);
-  font-weight: 400;
+  font-size: clamp(60px, 8vw, 72px);
+  font-weight: 600;
   line-height: 1.05;
   color: var(--fg);
 }
@@ -141,13 +160,9 @@ a:focus-visible {
   font-family: var(--font-body);
   font-size: 14px;
   font-weight: 500;
-  border-radius: 4px;
-  transition: opacity 0.15s;
+  border-radius: 2px;
+  transition: opacity 0.15s, background 0.15s, color 0.15s;
   cursor: pointer;
-}
-
-.btn:hover {
-  opacity: 0.9;
 }
 
 .btn-primary {
@@ -156,10 +171,26 @@ a:focus-visible {
   border: none;
 }
 
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
 .btn-outline {
   background: transparent;
   color: var(--fg);
   border: 1px solid var(--fg);
+}
+
+.btn-outline:hover {
+  background: var(--fg);
+  color: var(--bg);
+}
+
+/* —— Section divider —— */
+.section-divider {
+  height: 1px;
+  background: var(--border);
+  margin-top: 64px;
 }
 
 /* —— Sections —— */
@@ -186,8 +217,13 @@ a:focus-visible {
 .card {
   background: var(--card-bg);
   border: 1px solid var(--border);
-  border-radius: 4px;
+  border-radius: 2px;
   padding: 24px;
+  transition: border-color 0.15s;
+}
+
+.card:hover {
+  border-color: rgba(30, 43, 184, 0.3);
 }
 
 .card-title {
@@ -197,12 +233,17 @@ a:focus-visible {
   font-weight: 600;
   line-height: 1.4;
   color: var(--fg);
+  transition: color 0.15s;
+}
+
+.card:hover .card-title {
+  color: var(--primary);
 }
 
 .card-desc {
   margin: 0;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.6;
   color: var(--muted);
 }
 
@@ -221,7 +262,7 @@ a:focus-visible {
   align-items: center;
   gap: 16px;
   padding: 16px;
-  border-radius: 4px;
+  border-radius: 2px;
   transition: background 0.15s;
 }
 
@@ -231,6 +272,8 @@ a:focus-visible {
 
 .work-list li svg {
   flex-shrink: 0;
+  width: 20px;
+  height: 20px;
   color: var(--primary);
 }
 
@@ -253,8 +296,10 @@ a:focus-visible {
 
 .edu-item svg {
   flex-shrink: 0;
+  width: 20px;
+  height: 20px;
   color: var(--primary);
-  margin-top: 2px;
+  margin-top: 4px;
 }
 
 .edu-title {
@@ -266,7 +311,7 @@ a:focus-visible {
 }
 
 .edu-sub {
-  margin: 4px 0 0;
+  margin: 2px 0 0;
   font-size: 14px;
   color: var(--muted);
 }
@@ -274,16 +319,21 @@ a:focus-visible {
 /* —— Footer —— */
 .footer {
   border-top: 1px solid var(--border);
-  margin-top: 32px;
+  padding: 32px 0;
 }
 
 .footer-inner {
   max-width: var(--max);
   margin: 0 auto;
-  padding: 32px 24px;
+  padding: 0 24px;
   display: flex;
   justify-content: space-between;
-  font-size: 14px;
+  align-items: center;
+}
+
+.footer-inner p {
+  margin: 0;
+  font-size: 12px;
   color: var(--muted);
 }
 
@@ -305,5 +355,11 @@ a:focus-visible {
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
   }
 }
