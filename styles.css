@@ -203,6 +203,7 @@ a:hover {
   line-height: 1.1;
   letter-spacing: -0.02em;
   color: var(--ink);
+  text-wrap: balance;
 }
 
 .welcome-cred {
@@ -263,6 +264,7 @@ a:hover {
   line-height: 1.2;
   letter-spacing: -0.02em;
   color: var(--ink);
+  text-wrap: balance;
 }
 
 .profile-block .section-heading:first-child {
