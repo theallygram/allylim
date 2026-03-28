@@ -47,7 +47,9 @@
     if (!raf) raf = requestAnimationFrame(tick);
   }
 
-  if (aurora) {
+  var prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  if (aurora && !prefersReducedMotion) {
     document.addEventListener("pointermove", function (e) {
       tx = e.clientX / window.innerWidth - 0.5;
       ty = e.clientY / window.innerHeight - 0.5;
