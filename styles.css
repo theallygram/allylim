@@ -148,6 +148,7 @@ a:hover {
   letter-spacing: 0.02em;
   color: var(--ink);
   text-decoration: none;
+  padding: 0.625rem 0;
 }
 
 .site-wordmark:hover {
@@ -168,7 +169,7 @@ a:hover {
 .site-nav a {
   color: var(--ink);
   text-decoration: none;
-  padding: 0.625rem 0;
+  padding: 0.75rem 0;
 }
 
 .site-nav a:hover {
@@ -223,7 +224,7 @@ a:hover {
 
 .subnav a {
   color: var(--link);
-  padding: 0.625rem 0;
+  padding: 0.75rem 0;
   text-decoration: underline;
   text-decoration-color: rgba(11, 87, 208, 0.35);
   text-underline-offset: 0.15em;
@@ -243,17 +244,17 @@ a:hover {
 }
 
 .section-rule {
-  margin: 2rem 0 0;
+  margin: 2rem 0 1.5rem;
   border: none;
   border-top: 1px solid var(--rule);
 }
 
 .profile {
-  padding-top: 0.5rem;
+  padding-top: 0;
 }
 
 .profile-block {
-  padding-top: 1.5rem;
+  padding-top: 0.5rem;
 }
 
 .section-heading {
