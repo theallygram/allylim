@@ -1,10 +1,10 @@
 :root {
-  --bg: #f5f7fa;
+  --bg: #f0f4f9;
   --fg: #181c25;
   --muted: #6c7589;
   --primary: #1e2bb8;
-  --border: #dadde7;
-  --card-bg: #eff1f5;
+  --border: #d0d8e8;
+  --card-bg: #e8edf5;
   --font-display: "Cormorant Garamond", Georgia, serif;
   --font-body: "Inter", system-ui, sans-serif;
   --max: 768px;
@@ -30,6 +30,29 @@ body {
   color: var(--fg);
   background: var(--bg);
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* —— Floating orbs —— */
+.orb-canvas {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.35;
+  will-change: transform;
+  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.nav, .main, .footer {
+  position: relative;
+  z-index: 1;
 }
 
 a {
@@ -70,7 +93,7 @@ a:focus-visible {
   left: 0;
   right: 0;
   z-index: 50;
-  background: rgba(245, 247, 250, 0.8);
+  background: rgba(240, 244, 249, 0.8);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
