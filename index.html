@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -21,10 +21,9 @@
         <div class="nav-inner">
           <a href="/" class="nav-brand">Allyson Lim</a>
           <div class="nav-links">
-            <a href="#work">Work</a>
-            <a href="#case-studies">Case Studies</a>
-            <a href="#toolkit">Toolkit</a>
             <a href="#about">About</a>
+            <a href="#work">Work</a>
+            <a href="#toolkit">Toolkit</a>
             <a href="allyson-lim-resume.pdf" target="_blank" rel="noopener">Resume</a>
             <a href="#contact">Contact</a>
           </div>
@@ -39,13 +38,12 @@
       <!-- Hero -->
       <section class="hero" aria-labelledby="hero-title">
         <p class="hero-role">Technical Writer</p>
-        <h1 id="hero-title" class="hero-title">Allyson Lim</h1>
-        <p class="hero-desc">I write clear, accurate documentation for complex technical and regulatory environments. I work across web publishing, content QA, and structured content systems.</p>
+        <h1 id="hero-title" class="hero-title">Clear writing for complex things.</h1>
+        <p class="hero-desc">I turn dense technical and regulatory material into documentation people can actually use. Currently looking for my next role in technical writing, content design, or documentation.</p>
         <div class="hero-actions">
-          <a href="#work" class="btn btn-primary">View Work</a>
-          <a href="writing-sample.html" class="btn btn-outline">Writing Sample</a>
-          <a href="allyson-lim-resume.pdf" target="_blank" rel="noopener" class="btn btn-outline">Download Resume</a>
-          <a href="#contact" class="btn btn-outline">Contact</a>
+          <a href="#work" class="btn btn-primary">See my work</a>
+          <a href="writing-sample.html" class="btn btn-outline">Writing sample</a>
+          <a href="allyson-lim-resume.pdf" target="_blank" rel="noopener" class="btn btn-outline">Resume</a>
         </div>
       </section>
 
@@ -61,26 +59,10 @@
 
       <hr class="divider" />
 
-      <!-- Featured Work -->
-      <section class="section" id="work" aria-labelledby="work-title">
-        <h2 id="work-title" class="section-title">Featured Work</h2>
-        <div class="card-grid">
-          <a href="#cs-ised" class="card">
-            <span class="card-tag">Telecom / Regulatory</span>
-            <h3 class="card-title">ISED Spectrum Publishing</h3>
-            <p class="card-desc">Edited and QA'd 100+ policies, consultations, and bulletins. Prepared 2,000+ pages for CMS transition.</p>
-          </a>
-          <a href="#cs-nokia" class="card">
-            <span class="card-tag">Technical Training</span>
-            <h3 class="card-title">Nokia Training Content</h3>
-            <p class="card-desc">Reviewed and improved 30+ technical course decks. Ensured accuracy and consistency across materials.</p>
-          </a>
-          <a href="#cs-ai" class="card">
-            <span class="card-tag">AI / Medical</span>
-            <h3 class="card-title">AI Writing for Medical Research</h3>
-            <p class="card-desc">Applied AI tools to produce clear, publication-ready content for medical research contexts.</p>
-          </a>
-        </div>
+      <!-- About (moved up) -->
+      <section class="section" id="about" aria-labelledby="about-title">
+        <h2 id="about-title" class="section-title">A bit about me</h2>
+        <p class="about-text">I have an MA in English from the University of Waterloo and an Honours BA in English and Psychology. I've spent time working on spectrum and regulatory content at ISED, technical training materials at Nokia, and AI-assisted writing for medical research. I like work where the subject matter is hard and the goal is making it easy to understand.</p>
       </section>
 
       <hr class="divider" />
@@ -110,62 +92,54 @@
 
       <hr class="divider" />
 
-      <!-- Case Studies -->
-      <section class="section" id="case-studies" aria-labelledby="cs-title">
-        <h2 id="cs-title" class="section-title">Case Studies</h2>
+      <!-- Work -->
+      <section class="section" id="work" aria-labelledby="work-title">
+        <h2 id="work-title" class="section-title">Where I've worked</h2>
 
-        <article class="case-study" id="cs-ised">
-          <h3 class="cs-heading">Publishing and QA for Telecom/Regulatory Content at ISED</h3>
-          <div class="cs-meta">
-            <span class="cs-meta-item"><strong>Role:</strong> Editor, Content QA, Web Publisher</span>
-            <span class="cs-meta-item"><strong>Audience:</strong> Industry professionals, licensees, legal/regulatory stakeholders</span>
+        <div class="work-timeline">
+          <div class="work-entry">
+            <div class="work-header">
+              <h3 class="work-place">ISED Canada</h3>
+              <span class="work-tag">Telecom / Regulatory</span>
+            </div>
+            <p class="work-role">Editor, Content QA, Web Publisher</p>
+            <p class="work-desc">Edited and QA'd public-facing spectrum licensing documents, policy consultations, and technical bulletins. Helped prepare 2,000+ web pages for a major CMS migration. The content involved dense regulatory language, geographic data, and cross-referenced policy frameworks, so clarity and consistency were everything.</p>
           </div>
-          <p>Supported the publication of spectrum licensing documents, policy consultations, and technical bulletins for Innovation, Science and Economic Development Canada. Edited and quality-checked public-facing materials including the 3800 MHz Spectrum Licence Maps and SAB-001-23 bulletin.</p>
-          <p>These documents require precise technical language, regulatory compliance, and clear structure for diverse audiences. Helped prepare 2,000+ web pages for a CMS migration, ensuring content integrity and consistent formatting throughout the transition.</p>
-          <div class="cs-annotations">
-            <h4>Why this work matters</h4>
-            <ul>
-              <li><strong>Complexity:</strong> Telecom licensing content involves dense regulatory language, geographic data, and cross-referenced policy frameworks.</li>
-              <li><strong>Clarity techniques:</strong> Consistent heading hierarchy, scannable tables, plain-language summaries for technical audiences.</li>
-              <li><strong>Scale:</strong> QA across hundreds of interlinked documents with strict accuracy requirements.</li>
-            </ul>
-          </div>
-        </article>
 
-        <article class="case-study" id="cs-nokia">
-          <h3 class="cs-heading">Technical Training Content at Nokia</h3>
-          <div class="cs-meta">
-            <span class="cs-meta-item"><strong>Role:</strong> Content Reviewer, Technical Editor</span>
-            <span class="cs-meta-item"><strong>Audience:</strong> Engineers, technical trainers, internal teams</span>
+          <div class="work-entry">
+            <div class="work-header">
+              <h3 class="work-place">Nokia</h3>
+              <span class="work-tag">Technical Training</span>
+            </div>
+            <p class="work-role">Content Reviewer, Technical Editor</p>
+            <p class="work-desc">Reviewed and improved 30+ technical training decks on network infrastructure. Used analytics to figure out which materials needed attention first.</p>
           </div>
-          <p>Reviewed and improved 30+ technical training decks covering network infrastructure and telecom systems. Ensured accuracy, consistency, and clarity across instructional materials. Used analytics to identify which materials needed priority revision.</p>
-        </article>
 
-        <article class="case-study" id="cs-ai">
-          <h3 class="cs-heading">AI Writing for Medical Research</h3>
-          <div class="cs-meta">
-            <span class="cs-meta-item"><strong>Role:</strong> Writer, Editor</span>
-            <span class="cs-meta-item"><strong>Audience:</strong> Researchers, clinicians, journal reviewers</span>
+          <div class="work-entry">
+            <div class="work-header">
+              <h3 class="work-place">AI Medical Writing</h3>
+              <span class="work-tag">AI / Medical</span>
+            </div>
+            <p class="work-role">Writer, Editor</p>
+            <p class="work-desc">Used AI writing tools to produce structured content for medical research. Made sure everything met publication standards for accuracy and citation integrity.</p>
           </div>
-          <p>Applied AI writing tools to produce clear, structured content for medical research contexts. Ensured outputs met publication standards for accuracy, tone, and citation integrity.</p>
-        </article>
 
-        <article class="case-study" id="cs-research">
-          <h3 class="cs-heading">Surveillance, Technology, and Society Research</h3>
-          <div class="cs-meta">
-            <span class="cs-meta-item"><strong>Role:</strong> Researcher, Writer</span>
-            <span class="cs-meta-item"><strong>Audience:</strong> Academic reviewers, interdisciplinary scholars</span>
+          <div class="work-entry">
+            <div class="work-header">
+              <h3 class="work-place">MA Thesis Research</h3>
+              <span class="work-tag">Academic</span>
+            </div>
+            <p class="work-role">Researcher, Writer</p>
+            <p class="work-desc">Wrote a thesis on surveillance and speculative fiction. The kind of work that's really about synthesizing complex ideas into something structured and clear. <a href="https://uwspace.uwaterloo.ca/items/6673c4e3-0561-48d4-b88e-64e8563caae2" target="_blank" rel="noopener noreferrer">Read it here.</a></p>
           </div>
-          <p>MA thesis research on surveillance and speculative fiction, demonstrating analytical rigor and the ability to synthesize complex interdisciplinary material into structured, evidence-based writing.</p>
-          <p><a href="https://uwspace.uwaterloo.ca/items/6673c4e3-0561-48d4-b88e-64e8563caae2" target="_blank" rel="noopener noreferrer" class="text-link">Read the thesis</a></p>
-        </article>
+        </div>
       </section>
 
       <hr class="divider" />
 
       <!-- Technical Toolkit -->
       <section class="section" id="toolkit" aria-labelledby="toolkit-title">
-        <h2 id="toolkit-title" class="section-title">Technical Toolkit</h2>
+        <h2 id="toolkit-title" class="section-title">What I work with</h2>
         <ul class="toolkit-list">
           <li><code>HTML</code></li>
           <li><code>CSS</code></li>
@@ -177,20 +151,12 @@
           <li><code>Analytics-informed revision</code></li>
         </ul>
       </section>
-
-      <hr class="divider" />
-
-      <!-- About -->
-      <section class="section" id="about" aria-labelledby="about-title">
-        <h2 id="about-title" class="section-title">About</h2>
-        <p class="about-text">I'm a technical writer with an MA in English from the University of Waterloo and an Honours BA in English and Psychology. I've worked on regulatory content at ISED, technical training materials at Nokia, and AI-assisted writing for medical research. I'm most effective when the subject matter is complex and the audience needs clarity.</p>
-      </section>
     </main>
 
     <!-- Contact Footer -->
     <footer class="site-footer" id="contact" role="contentinfo">
       <div class="footer-inner">
-        <h2 class="footer-heading">Contact</h2>
+        <h2 class="footer-heading">Say hi</h2>
         <p class="footer-status">Open to technical writing roles.</p>
         <div class="footer-links">
           <a href="mailto:allylim@uwaterloo.ca" class="footer-link">Email</a>
