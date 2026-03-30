@@ -3,124 +3,204 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Allyson Lim — personal site" />
-    <title>Allyson Lim</title>
+    <meta name="description" content="Allyson Lim — Technical Writer specializing in documentation, regulatory content, and web publishing." />
+    <title>Allyson Lim — Technical Writer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="orb-canvas" aria-hidden="true"></div>
-    <nav class="nav">
-      <div class="nav-inner">
-        <span class="nav-brand">Allyson Lim</span>
-        <div class="nav-links">
-          <a href="#work">Work</a>
-          <a href="#research">Research</a>
-          <a href="#education">Education</a>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header" role="banner">
+      <nav class="nav" aria-label="Main navigation">
+        <div class="nav-inner">
+          <a href="/" class="nav-brand">Allyson Lim</a>
+          <div class="nav-links">
+            <a href="#work">Work</a>
+            <a href="#case-studies">Case Studies</a>
+            <a href="#toolkit">Toolkit</a>
+            <a href="#about">About</a>
+            <a href="allyson-lim-resume.pdf" target="_blank" rel="noopener">Resume</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
         </div>
+      </nav>
+    </header>
+
+    <main id="main-content" class="main">
+      <!-- Hero -->
+      <section class="hero" aria-labelledby="hero-title">
+        <p class="hero-role">Technical Writer</p>
+        <h1 id="hero-title" class="hero-title">Allyson Lim</h1>
+        <p class="hero-desc">I write clear, accurate documentation for complex technical and regulatory environments. I work across web publishing, content QA, and structured content systems.</p>
+        <div class="hero-actions">
+          <a href="#work" class="btn btn-primary">View Work</a>
+          <a href="writing-sample.html" class="btn btn-outline">Writing Sample</a>
+          <a href="allyson-lim-resume.pdf" target="_blank" rel="noopener" class="btn btn-outline">Download Resume</a>
+          <a href="#contact" class="btn btn-outline">Contact</a>
+        </div>
+      </section>
+
+      <!-- Proof chips -->
+      <div class="chips" aria-label="Areas of expertise">
+        <span class="chip">HTML / CSS</span>
+        <span class="chip">Documentation</span>
+        <span class="chip">Regulatory Content</span>
+        <span class="chip">Content QA</span>
+        <span class="chip">CMS Migration</span>
+        <span class="chip">Research Synthesis</span>
       </div>
-    </nav>
 
-    <main class="main">
-      <section class="hero">
-        <div>
-          <p class="hero-subtitle reveal">Writer · Researcher · Editor</p>
-          <h1 class="hero-title reveal">Allyson Lim</h1>
-          <p class="hero-desc reveal">MA, English — University of Waterloo. Polyglot and English-language writer exploring how stories, surveillance, and speculative futures intersect.</p>
-          <div class="hero-actions reveal">
-            <a href="allyson-lim-resume.pdf" target="_blank" rel="noopener" class="btn btn-primary">Résumé</a>
-            <a
-              href="https://uwspace.uwaterloo.ca/items/6673c4e3-0561-48d4-b88e-64e8563caae2"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="btn btn-outline"
-            >Graduate Work</a>
-          </div>
-        </div>
-        <div class="section-divider"></div>
-      </section>
+      <hr class="divider" />
 
-      <section class="section" id="work">
-        <h2 class="section-title reveal reveal-left">Writing &amp; Professional Work</h2>
-        <ul class="work-list">
-          <li class="reveal reveal-left">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.376 3.622a1 1 0 0 1 3.002 3.002L7.368 18.635a2 2 0 0 1-.855.506l-2.872.838a.5.5 0 0 1-.62-.62l.838-2.872a2 2 0 0 1 .506-.854z"/></svg>
-            <span>Long-form writing &amp; editing</span>
-          </li>
-          <li class="reveal reveal-left">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2Z"/><path d="M14 2v6h6"/><path d="M10 13h8"/><path d="M10 17h8"/><path d="M10 9h2"/></svg>
-            <span>Technical writing &amp; documentation</span>
-          </li>
-          <li class="reveal reveal-left">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-            <span>Research &amp; source work</span>
-          </li>
-          <li class="reveal reveal-left">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
-            <span>Briefs &amp; stakeholder copy</span>
-          </li>
-          <li class="reveal reveal-left">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-            <span>Shaping complex material for clarity</span>
-          </li>
-        </ul>
-        <div class="section-divider"></div>
-      </section>
-
-      <section class="section" id="research">
-        <h2 class="section-title reveal">Research and interests</h2>
+      <!-- Featured Work -->
+      <section class="section" id="work" aria-labelledby="work-title">
+        <h2 id="work-title" class="section-title">Featured Work</h2>
         <div class="card-grid">
-          <div class="card reveal">
-            <h3 class="card-title">Literature, Culture &amp; Narrative</h3>
-            <p class="card-desc">How stories shape and reflect cultural understanding.</p>
-          </div>
-          <div class="card reveal">
-            <h3 class="card-title">Surveillance, Technology &amp; Society</h3>
-            <p class="card-desc">The social implications of pervasive monitoring.</p>
-          </div>
-          <div class="card reveal">
-            <h3 class="card-title">Speculative Fiction</h3>
-            <p class="card-desc">Imagined futures as lenses for present-day critique.</p>
-          </div>
-          <div class="card reveal">
-            <h3 class="card-title">Science &amp; Technology Studies</h3>
-            <p class="card-desc">Bridging humanities and technology discourse.</p>
-          </div>
+          <a href="#cs-ised" class="card">
+            <span class="card-tag">Telecom / Regulatory</span>
+            <h3 class="card-title">ISED Spectrum Publishing</h3>
+            <p class="card-desc">Edited and QA'd 100+ policies, consultations, and bulletins. Prepared 2,000+ pages for CMS transition.</p>
+          </a>
+          <a href="#cs-nokia" class="card">
+            <span class="card-tag">Technical Training</span>
+            <h3 class="card-title">Nokia Training Content</h3>
+            <p class="card-desc">Reviewed and improved 30+ technical course decks. Ensured accuracy and consistency across materials.</p>
+          </a>
+          <a href="#cs-ai" class="card">
+            <span class="card-tag">AI / Medical</span>
+            <h3 class="card-title">AI Writing for Medical Research</h3>
+            <p class="card-desc">Applied AI tools to produce clear, publication-ready content for medical research contexts.</p>
+          </a>
         </div>
-        <div class="section-divider"></div>
       </section>
 
-      <section class="section" id="education">
-        <h2 class="section-title reveal reveal-left">Education</h2>
-        <div class="edu-list">
-          <div class="edu-item reveal">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
-            <div>
-              <h3 class="edu-title">MA, English</h3>
-              <p class="edu-sub">University of Waterloo</p>
-            </div>
+      <hr class="divider" />
+
+      <!-- Evidence Strip -->
+      <section class="evidence" aria-labelledby="evidence-title">
+        <h2 id="evidence-title" class="sr-only">Key accomplishments</h2>
+        <div class="evidence-grid">
+          <div class="evidence-item">
+            <span class="evidence-num">100+</span>
+            <span class="evidence-label">policies, consultations, and bulletins edited</span>
           </div>
-          <div class="edu-item reveal">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
-            <div>
-              <h3 class="edu-title">Honours BA, English &amp; Psychology</h3>
-              <p class="edu-sub">University of Waterloo</p>
-            </div>
+          <div class="evidence-item">
+            <span class="evidence-num">2,000+</span>
+            <span class="evidence-label">web pages prepared for CMS transition</span>
+          </div>
+          <div class="evidence-item">
+            <span class="evidence-num">30+</span>
+            <span class="evidence-label">technical course decks reviewed</span>
+          </div>
+          <div class="evidence-item">
+            <span class="evidence-num">HTML/CSS</span>
+            <span class="evidence-label">content published directly in web systems</span>
           </div>
         </div>
+      </section>
+
+      <hr class="divider" />
+
+      <!-- Case Studies -->
+      <section class="section" id="case-studies" aria-labelledby="cs-title">
+        <h2 id="cs-title" class="section-title">Case Studies</h2>
+
+        <article class="case-study" id="cs-ised">
+          <h3 class="cs-heading">Publishing and QA for Telecom/Regulatory Content at ISED</h3>
+          <div class="cs-meta">
+            <span class="cs-meta-item"><strong>Role:</strong> Editor, Content QA, Web Publisher</span>
+            <span class="cs-meta-item"><strong>Audience:</strong> Industry professionals, licensees, legal/regulatory stakeholders</span>
+          </div>
+          <p>Supported the publication of spectrum licensing documents, policy consultations, and technical bulletins for Innovation, Science and Economic Development Canada. Edited and quality-checked public-facing materials including the 3800 MHz Spectrum Licence Maps and SAB-001-23 bulletin.</p>
+          <p>These documents require precise technical language, regulatory compliance, and clear structure for diverse audiences. Helped prepare 2,000+ web pages for a CMS migration, ensuring content integrity and consistent formatting throughout the transition.</p>
+          <div class="cs-annotations">
+            <h4>Why this work matters</h4>
+            <ul>
+              <li><strong>Complexity:</strong> Telecom licensing content involves dense regulatory language, geographic data, and cross-referenced policy frameworks.</li>
+              <li><strong>Clarity techniques:</strong> Consistent heading hierarchy, scannable tables, plain-language summaries for technical audiences.</li>
+              <li><strong>Scale:</strong> QA across hundreds of interlinked documents with strict accuracy requirements.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="case-study" id="cs-nokia">
+          <h3 class="cs-heading">Technical Training Content at Nokia</h3>
+          <div class="cs-meta">
+            <span class="cs-meta-item"><strong>Role:</strong> Content Reviewer, Technical Editor</span>
+            <span class="cs-meta-item"><strong>Audience:</strong> Engineers, technical trainers, internal teams</span>
+          </div>
+          <p>Reviewed and improved 30+ technical training decks covering network infrastructure and telecom systems. Ensured accuracy, consistency, and clarity across instructional materials. Used analytics to identify which materials needed priority revision.</p>
+        </article>
+
+        <article class="case-study" id="cs-ai">
+          <h3 class="cs-heading">AI Writing for Medical Research</h3>
+          <div class="cs-meta">
+            <span class="cs-meta-item"><strong>Role:</strong> Writer, Editor</span>
+            <span class="cs-meta-item"><strong>Audience:</strong> Researchers, clinicians, journal reviewers</span>
+          </div>
+          <p>Applied AI writing tools to produce clear, structured content for medical research contexts. Ensured outputs met publication standards for accuracy, tone, and citation integrity.</p>
+        </article>
+
+        <article class="case-study" id="cs-research">
+          <h3 class="cs-heading">Surveillance, Technology, and Society Research</h3>
+          <div class="cs-meta">
+            <span class="cs-meta-item"><strong>Role:</strong> Researcher, Writer</span>
+            <span class="cs-meta-item"><strong>Audience:</strong> Academic reviewers, interdisciplinary scholars</span>
+          </div>
+          <p>MA thesis research on surveillance and speculative fiction, demonstrating analytical rigor and the ability to synthesize complex interdisciplinary material into structured, evidence-based writing.</p>
+          <p><a href="https://uwspace.uwaterloo.ca/items/6673c4e3-0561-48d4-b88e-64e8563caae2" target="_blank" rel="noopener noreferrer" class="text-link">Read the thesis</a></p>
+        </article>
+      </section>
+
+      <hr class="divider" />
+
+      <!-- Technical Toolkit -->
+      <section class="section" id="toolkit" aria-labelledby="toolkit-title">
+        <h2 id="toolkit-title" class="section-title">Technical Toolkit</h2>
+        <ul class="toolkit-list">
+          <li><code>HTML</code></li>
+          <li><code>CSS</code></li>
+          <li><code>CMS publishing</code></li>
+          <li><code>Structured content</code></li>
+          <li><code>Documentation workflows</code></li>
+          <li><code>Content QA</code></li>
+          <li><code>Accessibility-aware editing</code></li>
+          <li><code>Analytics-informed revision</code></li>
+        </ul>
+      </section>
+
+      <hr class="divider" />
+
+      <!-- About -->
+      <section class="section" id="about" aria-labelledby="about-title">
+        <h2 id="about-title" class="section-title">About</h2>
+        <p class="about-text">I'm a technical writer with an MA in English from the University of Waterloo and an Honours BA in English and Psychology. I've worked on regulatory content at ISED, technical training materials at Nokia, and AI-assisted writing for medical research. I'm most effective when the subject matter is complex and the audience needs clarity.</p>
       </section>
     </main>
 
-    <footer class="footer">
+    <!-- Contact Footer -->
+    <footer class="site-footer" id="contact" role="contentinfo">
       <div class="footer-inner">
-        <p>© <span id="year">2026</span> Allyson Lim</p>
+        <h2 class="footer-heading">Contact</h2>
+        <p class="footer-status">Open to technical writing roles.</p>
+        <div class="footer-links">
+          <a href="mailto:allylim@uwaterloo.ca" class="footer-link">Email</a>
+          <a href="https://linkedin.com/in/allysonlim" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+          <a href="allyson-lim-resume.pdf" target="_blank" rel="noopener" class="footer-link">Resume</a>
+        </div>
+        <p class="footer-copy">&copy; <span id="year">2026</span> Allyson Lim</p>
       </div>
     </footer>
+
     <script src="main.js" defer></script>
   </body>
 </html>
